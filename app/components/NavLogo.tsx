@@ -16,7 +16,7 @@ export const NavLogo = ({ className }: props) => {
   return (
     <div className={className}>
       <button
-        className={`cursor-pointer hover:scale-105 transition-all`}
+        className={`cursor-pointer transition-all hover:scale-105`}
         onClick={handleClick}
       >
         <Link href={"/"}>
@@ -25,7 +25,7 @@ export const NavLogo = ({ className }: props) => {
             width={"500"}
             height={"0"}
             alt="Smart Cooling Logo"
-            className="w-52"
+            className="w-40 md:w-52"
           />
         </Link>
       </button>

@@ -1,11 +1,16 @@
 import React from "react";
 import { Transition } from "../Transition";
 
-export const Hero = () => {
+export default function Hero() {
+  const bg =
+    "bg-[url('https://res.cloudinary.com/mvacoimbra/image/upload/v1699317522/smart-cooling-website/hero-bg.png')]";
+
   return (
-    <section className="relative flex h-screen items-center bg-[url('https://res.cloudinary.com/mvacoimbra/image/upload/v1699317522/smart-cooling-website/hero-bg.png')] bg-cover bg-center bg-no-repeat px-7 md:px-24">
+    <section
+      className={`${bg} relative flex h-screen items-center bg-cover bg-center bg-no-repeat px-7 text-w-1 md:px-24`}
+    >
       <div>
-        <h1 className="text-4xl font-medium md:text-6xl">
+        <h1 className="mb-1 text-4xl font-medium md:text-6xl">
           {"Seu conforto é a nossa missão!"}
         </h1>
         <h6 className="max-w-xl text-lg font-medium md:text-xl">
@@ -20,4 +25,4 @@ export const Hero = () => {
       </div>
     </section>
   );
-};
+}

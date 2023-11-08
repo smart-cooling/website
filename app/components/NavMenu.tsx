@@ -19,14 +19,14 @@ export const NavMenu = ({ className }: props) => {
         onClick={() => setIsActive(!isActive)}
       >
         <Bars3Icon
-          className={`h-12 w-12 text-w-1 transition-all duration-500 ${
+          className={`w-10 text-w-1 transition-all duration-500 md:w-12 ${
             isActive && "-rotate-90"
           }`}
         />
       </button>
       <ul
-        className={`align-center absolute right-7 w-max flex-col justify-center overflow-hidden rounded-md p-1 text-lg shadow-lg backdrop-blur-sm transition-all duration-700 md:right-24 ${
-          isActive ? "h-24 opacity-100" : "h-0 opacity-0"
+        className={`absolute right-7 flex w-max flex-col justify-evenly gap-2 overflow-hidden rounded-xl bg-black bg-opacity-5 p-3 text-xl font-semibold shadow-lg backdrop-blur-md transition-all duration-700 md:right-24 ${
+          isActive ? "h-32 opacity-100" : "h-0 opacity-0"
         }`}
       >
         <li>Sobre nos</li>
