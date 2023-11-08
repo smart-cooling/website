@@ -9,7 +9,7 @@ export default function Hero() {
     <section
       className={`relative flex h-screen items-center px-7 text-w-1 md:px-24 ${bg} bg-cover bg-center bg-no-repeat`}
     >
-      <div className="absolute left-0 top-0 z-0 h-screen w-screen bg-gradient-to-r from-o-1 via-o-4 to-b-1 opacity-90 mix-blend-multiply" />
+      <div className="absolute left-0 top-0 z-0 h-screen w-screen bg-gradient-to-r from-o-1 via-o-4 to-b-1 opacity-80 mix-blend-multiply" />
       <div className="z-10">
         <h1 className="mb-1 text-4xl font-medium md:text-6xl">
           {"Seu conforto é a nossa missão!"}
