@@ -3,6 +3,7 @@ import Mvv from "./components/sections/Mvv";
 import Hero from "./components/sections/Hero";
 import About from "./components/sections/About";
 import SunflakeBar from "./components/SunflakeBar";
+import Portfolio from "./components/sections/Portfolio";
 
 export default function Home() {
   return (
@@ -12,10 +13,7 @@ export default function Home() {
       <About />
       <SunflakeBar />
       <Mvv />
-      <div className="h-96 w-full" />
-      <div className="h-96 w-full" />
-      <div className="h-96 w-full" />
-      <div className="h-96 w-full" />
+      <Portfolio />
     </main>
   );
 }
