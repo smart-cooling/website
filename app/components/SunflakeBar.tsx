@@ -5,7 +5,7 @@ import React from "react";
 
 export default function SunflakeBar() {
   return (
-    <div className="flex w-full justify-center bg-b-4">
+    <div className="flex w-full justify-center bg-b-4 py-10">
       <CldImage
         src="smart-cooling-website/icons/icon-sunflake"
         alt="icon-sunflake"
