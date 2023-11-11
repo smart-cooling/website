@@ -61,7 +61,7 @@ export default function BrandsCarousel() {
     <div className="mb-20">
       <Slider {...settings}>
         {itens.map((item, index) => (
-          <>
+          <div key={index}>
             <div className="px-4">
               <div className="flex h-56 w-full items-center justify-center rounded-3xl bg-w-1/20 p-6 transition-all duration-300 hover:bg-w-1/80">
                 <CldImage
@@ -69,11 +69,11 @@ export default function BrandsCarousel() {
                   alt="brand logo"
                   width={1080}
                   height={0}
-                  className="max-h-full w-auto brightness-125 grayscale transition-all duration-300 hover:brightness-100 hover:grayscale-0"
+                  className="max-h-full w-auto brightness-200 grayscale transition-all duration-300 hover:brightness-100 hover:grayscale-0"
                 />
               </div>
             </div>
-          </>
+          </div>
         ))}
       </Slider>
     </div>

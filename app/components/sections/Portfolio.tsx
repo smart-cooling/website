@@ -28,7 +28,7 @@ export default function Portfolio() {
       <PTitle title="Além disso, oferecemos serviços especializados para uma variedade de outras marcas" />
       <BrandsCarousel />
       <PTitle title="Confira o nosso portfólio de projetos concluídos" />
-      {/* <Gallery /> */}
+      <Gallery />
     </section>
   );
 }
