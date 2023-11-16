@@ -6,7 +6,10 @@ export default function About() {
   const shadow: string = "shadow-[4px_4px_0_0_rgba(240,154,56,1)]";
 
   return (
-    <section className="bg-gradient-to-b from-b-2 from-10% to-b-4 to-90% px-7 py-5 md:px-24 md:py-12">
+    <section
+      className="bg-gradient-to-b from-b-2 from-10% to-b-4 to-90% px-7 py-5 md:px-24 md:py-12"
+      id="about"
+    >
       <SectionTitle title="Sobre nós" icon="flake" />
       <ul className="mb-10 flex flex-wrap justify-evenly gap-x-10 gap-y-10">
         <Card
