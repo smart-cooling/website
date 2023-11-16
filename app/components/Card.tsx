@@ -17,10 +17,11 @@ export default function Card({ icon, title, className, children }: props) {
     >
       <div className="mb-10 flex items-center justify-center gap-3">
         <CldImage
-          src={`smart-cooling-website/icons/icon-${icon}`}
+          src={`website/icons/icon-${icon}`}
           alt={`icon-${icon}`}
           height={60}
           width={60}
+          className="h-14 w-auto"
         />
         <h3 className="text-3xl font-bold text-w-1">{title}</h3>
       </div>

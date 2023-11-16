@@ -11,11 +11,11 @@ type props = {
 export const Transition = ({ className, asset }: props) => {
   return (
     <CldImage
-      src={`smart-cooling-website/${asset}`}
+      src={`website/${asset}`}
       width={1920}
       height={0}
       alt=""
-      className={className}
+      className={`${className} absolute bottom-0 left-0 h-auto w-screen`}
     />
   );
 };

@@ -12,7 +12,7 @@ export default function SectionTitle({ title, icon = "flake" }: props) {
   return (
     <div className="mb-14 flex items-center gap-3 text-w-1">
       <CldImage
-        src={`smart-cooling-website/icons/icon-${icon}`}
+        src={`website/icons/icon-${icon}`}
         alt={`icon-${icon}`}
         width={50}
         height={50}

@@ -3,7 +3,7 @@ import { Transition } from "../Transition";
 
 export default function Hero() {
   const bg =
-    "bg-[url('https://res.cloudinary.com/mvacoimbra/image/upload/v1699455524/smart-cooling-website/hero-bg.png')]";
+    "bg-[url('https://res.cloudinary.com/smartcooling/image/upload/v1700106227/website/hero-bg.jpg')]";
 
   return (
     <section
@@ -20,10 +20,7 @@ export default function Hero() {
           }
         </h6>
 
-        <Transition
-          className="absolute bottom-0 left-0 w-screen"
-          asset="hero-transition"
-        />
+        <Transition asset="hero-transition" />
       </div>
     </section>
   );

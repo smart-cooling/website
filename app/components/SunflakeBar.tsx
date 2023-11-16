@@ -7,7 +7,7 @@ export default function SunflakeBar() {
   return (
     <div className="flex w-full justify-center bg-b-4 py-10">
       <CldImage
-        src="smart-cooling-website/icons/icon-sunflake"
+        src="website/icons/icon-sunflake"
         alt="icon-sunflake"
         height={100}
         width={100}

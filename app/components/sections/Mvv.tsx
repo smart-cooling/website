@@ -42,10 +42,7 @@ export default function Mvv() {
           </Card>
         </ul>
       </div>
-      <Transition
-        className="absolute bottom-0 left-0 w-screen"
-        asset="mvv-transition"
-      />
+      <Transition asset="mvv-transition" />
     </section>
   );
 }
