@@ -61,20 +61,21 @@ export default function Gallery() {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          arrows: false,
         },
       },
     ],
   };
 
   return (
-    <div className="mb-20">
+    <div className="mb-10 md:mb-28">
       <Slider {...settings}>
         {itens.map((item, index) => (
           <div key={index}>
             <div className="px-4">
-              <div className="">
+              <div className="shadow-inner">
                 <CldImage
-                  src={`smart-cooling-website/jobs/job-img-${item}`}
+                  src={`website/jobs/job-img-${item}`}
                   alt="brand logo"
                   width={1080}
                   height={0}

@@ -21,11 +21,11 @@ export const NavLogo = ({ className }: props) => {
       >
         <Link href={"/"}>
           <CldImage
-            src={`smart-cooling-website/logo-w`}
-            width={"500"}
-            height={"0"}
+            src={`website/logo-w`}
+            width={"1280"}
+            height={"720"}
             alt="Smart Cooling Logo"
-            className="w-40 md:w-52"
+            className="h-auto w-40 md:w-52"
           />
         </Link>
       </button>

@@ -3,6 +3,7 @@ import SectionTitle from "../SectionTitle";
 import Carousel from "../Carousel";
 import BrandsCarousel from "../BrandsCarousel";
 import Gallery from "../Gallery";
+import { Transition } from "../Transition";
 
 type pTitle = {
   title: string;
@@ -29,6 +30,7 @@ export default function Portfolio() {
       <BrandsCarousel />
       <PTitle title="Confira o nosso portfólio de projetos concluídos" />
       <Gallery />
+      <Transition asset="contact-transition" />
     </section>
   );
 }

@@ -1,9 +1,10 @@
 import NavBar from "./components/NavBar";
-import Mvv from "./components/sections/Mvv";
 import Hero from "./components/sections/Hero";
 import About from "./components/sections/About";
 import SunflakeBar from "./components/SunflakeBar";
+import Mvv from "./components/sections/Mvv";
 import Portfolio from "./components/sections/Portfolio";
+import Contact from "./components/sections/Contact";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <SunflakeBar />
       <Mvv />
       <Portfolio />
+      <Contact />
     </main>
   );
 }
