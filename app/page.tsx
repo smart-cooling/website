@@ -5,6 +5,7 @@ import SunflakeBar from "./components/SunflakeBar";
 import Mvv from "./components/sections/Mvv";
 import Portfolio from "./components/sections/Portfolio";
 import Contact from "./components/sections/Contact";
+import Footer from "./components/sections/Footer";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Mvv />
       <Portfolio />
       <Contact />
+      <Footer />
     </main>
   );
 }

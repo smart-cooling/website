@@ -25,7 +25,10 @@ function ContactInfo({ icon, children }: contacInfoProps) {
 
 export default function Contact() {
   return (
-    <section className="relative bg-gradient-to-b from-s-3 to-s-2 px-7 py-5 md:px-24 md:py-12">
+    <section
+      className="relative bg-gradient-to-b from-s-3 to-s-2 px-7 py-5 md:px-24 md:py-12"
+      id="contact"
+    >
       <SectionTitle title="Contato" icon="sunflake" />
       <div className="flex justify-between rounded-3xl bg-s-1 p-10 max-md:flex-col-reverse max-md:items-center">
         <div className="w-1/2 flex-col items-center max-md:mt-10 max-md:flex max-md:w-full">

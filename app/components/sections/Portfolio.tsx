@@ -22,6 +22,7 @@ export default function Portfolio() {
   return (
     <section
       className={`relative bg-gradient-to-b from-o-4 from-30% to-g-1 px-7 py-5 md:px-24 md:py-12`}
+      id="portfolio"
     >
       <SectionTitle title="Portfólio" icon="sun" />
       <PTitle title="Na Smart Cooling, temos o orgulho de ser a assistência técnica autorizada de marcas renomadas" />

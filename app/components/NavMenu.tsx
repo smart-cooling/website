@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import { usePathname } from "next/navigation";
 import { Bars3Icon } from "@heroicons/react/24/solid";
 
 type props = {
@@ -12,8 +13,16 @@ export const NavMenu = ({ className }: props) => {
 
   console.log(isActive);
 
+  const pathName = usePathname();
+
+  console.log(pathName);
+
   return (
-    <div>
+    <div
+      className={`absolute right-0 top-1/3 flex flex-col items-end overflow-hidden transition-all duration-700 ${
+        pathName === "/terms" ? "hidden" : ""
+      } ${isActive ? "h-44" : "h-10"}`}
+    >
       <button
         className="cursor-pointer hover:scale-105"
         onClick={() => setIsActive(!isActive)}
@@ -25,14 +34,18 @@ export const NavMenu = ({ className }: props) => {
         />
       </button>
       <ul
-        className={`absolute right-7 flex w-max flex-col justify-evenly gap-2 overflow-hidden rounded-xl bg-black bg-opacity-5 p-3 text-xl font-semibold shadow-lg backdrop-blur-md transition-all duration-700 md:right-24 ${
-          isActive ? "h-32 opacity-100" : "h-0 opacity-0"
-        }`}
+        className={`flex w-max flex-col justify-evenly gap-2 rounded-xl bg-black bg-opacity-5 p-3 text-xl font-semibold shadow-lg backdrop-blur-md`}
         style={{ WebkitBackdropFilter: "blur(5px)" }}
       >
-        <li>Sobre nos</li>
-        <li>Portfolio</li>
-        <li>Contato</li>
+        <li>
+          <button>Sobre nos</button>
+        </li>
+        <li>
+          <button>Portfolio</button>
+        </li>
+        <li>
+          <button>Contato</button>
+        </li>
       </ul>
     </div>
   );
