@@ -6,9 +6,10 @@ import Link from "next/link";
 
 type props = {
   className?: string;
+  src: string;
 };
 
-export const NavLogo = ({ className }: props) => {
+export const NavLogo = ({ className, src }: props) => {
   const handleClick = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
@@ -21,9 +22,9 @@ export const NavLogo = ({ className }: props) => {
       >
         <Link href={"/"}>
           <CldImage
-            src={`website/logo-w`}
-            width={"1280"}
-            height={"720"}
+            src={src}
+            width={500}
+            height={0}
             alt="Smart Cooling Logo"
             className="h-auto w-40 md:w-52"
           />
