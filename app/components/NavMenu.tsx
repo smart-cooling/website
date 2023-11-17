@@ -49,7 +49,7 @@ export default function NavMenu({ className, isActive }: props) {
               scroll("about", -100);
             }}
           >
-            Sobre nos
+            Sobre nós
           </button>
         </li>
         <li className="hover:text-o-2">
