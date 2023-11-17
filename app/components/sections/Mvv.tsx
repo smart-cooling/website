@@ -7,7 +7,9 @@ export default function Mvv() {
     "bg-[url('https://res.cloudinary.com/mvacoimbra/image/upload/v1699387911/smart-cooling-website/about-bg.svg')]";
 
   return (
-    <section className={`relative px-7 py-5 md:px-24 md:py-12`}>
+    <section
+      className={`relative w-full overflow-hidden px-7 py-5 md:px-24 md:py-12`}
+    >
       <div
         className="absolute left-0 top-0 z-0 h-full w-screen rotate-180"
         style={{

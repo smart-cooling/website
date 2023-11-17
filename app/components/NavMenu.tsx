@@ -1,52 +1,76 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import { usePathname } from "next/navigation";
 import { Bars3Icon } from "@heroicons/react/24/solid";
+import { NavContext } from "./NavBar";
 
 type props = {
   className?: string;
+  isActive?: boolean;
 };
 
-export const NavMenu = ({ className }: props) => {
-  const [isActive, setIsActive] = useState(false);
+const scroll = (id: string, yOffset: number) => {
+  const element = document.getElementById(id);
+  const y = element!.getBoundingClientRect().top + window.scrollY + yOffset;
 
-  console.log(isActive);
+  window.scrollTo({ top: y, behavior: "smooth" });
+};
 
+export default function NavMenu({ className, isActive }: props) {
   const pathName = usePathname();
 
-  console.log(pathName);
+  const { setIsActive } = useContext(NavContext);
 
   return (
     <div
-      className={`absolute right-0 top-1/3 flex flex-col items-end overflow-hidden transition-all duration-700 ${
+      className={`absolute right-0 top-1/3 z-20 flex flex-col items-end gap-1 overflow-hidden transition-all duration-200${
         pathName === "/terms" ? "hidden" : ""
-      } ${isActive ? "h-44" : "h-10"}`}
+      } ${isActive ? "h-60" : "h-10"}`}
     >
       <button
         className="cursor-pointer hover:scale-105"
         onClick={() => setIsActive(!isActive)}
       >
         <Bars3Icon
-          className={`w-10 text-w-1 transition-all duration-500 md:w-12 ${
-            isActive && "-rotate-90"
+          className={`w-10 text-w-1 transition-all duration-200 md:w-12 ${
+            isActive && "-rotate-90 text-o-2"
           }`}
         />
       </button>
       <ul
-        className={`flex w-max flex-col justify-evenly gap-2 rounded-xl bg-black bg-opacity-5 p-3 text-xl font-semibold shadow-lg backdrop-blur-md`}
-        style={{ WebkitBackdropFilter: "blur(5px)" }}
+        className={`flex w-max flex-col justify-evenly gap-2 rounded-lg p-3 text-xl font-semibold text-b-2 transition-all duration-75 ${
+          isActive && "bg-w-1"
+        }`}
       >
-        <li>
-          <button>Sobre nos</button>
+        <li className="hover:text-o-2">
+          <button
+            onClick={() => {
+              scroll("about", -100);
+            }}
+          >
+            Sobre nos
+          </button>
         </li>
-        <li>
-          <button>Portfolio</button>
+        <li className="hover:text-o-2">
+          <button
+            onClick={() => {
+              scroll("portfolio", -100);
+            }}
+          >
+            Portfólio
+          </button>
         </li>
-        <li>
-          <button>Contato</button>
+        <li className="hover:text-o-2">
+          <button
+            onClick={() => {
+              scroll("contact", -100);
+            }}
+          >
+            Contato
+          </button>
         </li>
       </ul>
     </div>
   );
-};
+}
