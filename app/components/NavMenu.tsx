@@ -33,8 +33,8 @@ export default function NavMenu({ className, isActive }: props) {
         onClick={() => setIsActive(!isActive)}
       >
         <Bars3Icon
-          className={`w-10 text-w-1 transition-all duration-200 md:w-12 ${
-            isActive && "-rotate-90 text-o-2"
+          className={`w-10 transition-all duration-200 md:w-12 ${
+            isActive ? "-rotate-90 text-o-2" : "text-w-1"
           }`}
         />
       </button>
