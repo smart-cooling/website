@@ -24,8 +24,8 @@ export default function NavMenu({ className, isActive }: props) {
 
   return (
     <div
-      className={`absolute right-0 top-1/4 z-20 flex flex-col items-end gap-1 overflow-hidden transition-all duration-200${
-        pathName === "/terms" ? "hidden" : ""
+      className={`absolute right-0 top-1/4 z-20 flex flex-col items-end gap-1 overflow-hidden transition-all duration-200 ${
+        pathName === "/terms" ? "hidden" : " "
       } ${isActive ? "h-60" : "h-10"}`}
     >
       <button
