@@ -15,7 +15,7 @@ const Terms = () => {
         />
         <ol
           type="1"
-          className="flex list-decimal flex-col gap-6 indent-6 text-2xl max-sm:text-md marker:font-semibold"
+          className="flex list-decimal flex-col gap-6 indent-6 text-2xl max-sm:text-base marker:font-semibold"
         >
           <li>
             <p>
