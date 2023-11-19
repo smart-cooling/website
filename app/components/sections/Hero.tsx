@@ -3,7 +3,7 @@ import { Transition } from "../Transition";
 
 export default function Hero() {
   const bg =
-    "bg-[url('https://res.cloudinary.com/smartcooling/image/upload/v1700106227/website/hero-bg.jpg')]";
+    "bg-[url('https://res.cloudinary.com/smartcooling/image/upload/v1700432020/website/hero-bg-2.jpg')]";
 
   return (
     <section
