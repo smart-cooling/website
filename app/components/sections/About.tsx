@@ -17,7 +17,7 @@ export default function About() {
           className={`bg-b-4 text-base font-medium text-w-2 ${shadow}`}
         >
           <p className="indent-5">
-            {`Fundada em 2021 na cidade de Anápolis, Goiás, a Smart Cooling é uma empresa especializada na venda, instalação e manutenção de equipamentos de ar-condicionado e energia solar.`}
+            {`Fundada em 2021 na cidade de Anápolis, Goiás, por Guilherme de Moura Cardoso, a Smart Cooling é uma empresa especializada na venda, instalação e manutenção de equipamentos de ar-condicionado e energia solar.`}
           </p>
           <p className="indent-5">
             {`Nossa equipe é formada por profissionais experientes que estão dedicados a entender as necessidades individuais de cada cliente e oferecer soluções sob medida que atendam a essas necessidades.`}
